@@ -9,11 +9,9 @@ const displayMessage = function (message) {
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
-  console.log(guess);
 
   //When there is no correct number
   if (!guess) {
-    //document.querySelector('.message').textContent = '⛔ No number';
     displayMessage('⛔ No number');
 
     //When player win
